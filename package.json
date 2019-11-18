@@ -1,0 +1,29 @@
+{
+  "name": "twitter_collect",
+  "version": "1.0.0",
+  "description": "Collect some tweets from twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/itau-test/twitter-collect.git"
+  },
+  "keywords": [
+    "twitter",
+    "data",
+    "test"
+  ],
+  "author": "Thiago Antonius Oliveira Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/itau-test/twitter-collect/issues"
+  },
+  "homepage": "https://gitlab.com/itau-test/twitter-collect#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
