@@ -1,0 +1,18 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=twitterpass
+      - MYSQL_DATABASE=twitter
+    ports:
+      - 3306:3306
+
+  app:
+    image: node:12.13
+    working_dir: /home/node/app
+    volumes:
+      - .:/home/node/app
+    links:
+      - db
+    command: bash -c 'npm install && npm start'
