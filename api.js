@@ -9,17 +9,15 @@ const headers = {
 module.exports.api = {
   getTweetsByTag: (tag) => {
     const params = new URLSearchParams();
+
     params.append('q', tag);
     params.append('result_type', 'recent');
     params.append('include_entities', true);
-    params.append('count', 100);
+    params.append('count', process.env.TOTAL_TWEETS_BY_TAG);
 
-    return fetch('https://api.twitter.com/1.1/search/tweets.json?' + params,
-    {
+    return fetch('https://api.twitter.com/1.1/search/tweets.json?' + params, {
       method: 'GET',
       headers
-    })
-    .then(res => res.json())
-    .then(json => console.log(json));
+    }).then(res => res.json()).then(data => data.statuses)
   }
 }
