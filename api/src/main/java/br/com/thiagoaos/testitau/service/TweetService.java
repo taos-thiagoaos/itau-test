@@ -7,6 +7,8 @@ import br.com.thiagoaos.testitau.repository.TweetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class TweetService {
 
@@ -17,8 +19,8 @@ public class TweetService {
         this.repository = repository;
     }
 
-    public Tweet getOne(Integer id) {
-        return this.repository.getOne(id).orElseThrow(() -> new TweetNotFoundException(id));
+    public Tweet getOne(long id) {
+        return Optional.ofNullable(this.repository.findById(id)).orElseThrow(() -> new TweetNotFoundException(id));
     }
 
 }
