@@ -1,2 +1,4 @@
 twitter_collect/.env
 twitter_collect/node_modules/
+
+.vscode/
