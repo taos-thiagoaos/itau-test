@@ -1,2 +1,2 @@
-.env
-node_modules/
+twitter_collect/.env
+twitter_collect/node_modules/
