@@ -8,11 +8,11 @@ services:
     ports:
       - 3306:3306
 
-  app:
+  data_collect:
     image: node:12.13
     working_dir: /home/node/app
     volumes:
-      - .:/home/node/app
+      - ./twitter_collect:/home/node/app
     links:
       - db
     command: bash -c 'npm install && npm start'

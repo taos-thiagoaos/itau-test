@@ -22,5 +22,12 @@ public class Tweet {
     private String lang;
     private String searchTag;
     private Date date;
-
 }
+
+
+
+
+
+
+
+
