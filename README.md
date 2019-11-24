@@ -31,14 +31,17 @@
 
     > Este app publica 3 APIs REST. É utilizado a base mysql pré populada (pelo app nodejs) para adquirir as informações 
 
-        - GET http://localhost:8080/api/v1/tweets/total-by-tag-lang
-        - GET http://localhost:8080/api/v1/tweets/total-by-hour
-        - GET http://localhost:8080/api/v1/users/top5-followers
+        - Production Base Path https://itau-test.herokuapp.com
+        - Local Base Path http://localhost:8080
+
+        - GET /api/v1/tweets/total-by-tag-lang
+        - GET /api/v1/tweets/total-by-hour
+        - GET /api/v1/users/top5-followers
 
     > swagger api
         
-        - http//localhost:8080/swagger-ui.html
-        - http://localhost:8080/v2/api-docs
+        - /swagger-ui.html
+        - /v2/api-docs
 
 - Gateway
  
@@ -81,3 +84,19 @@
 - front
 
         - docker-compose up front
+
+## Deploy
+
+ > api para o heroku
+
+        - heroku login
+        - heroku git:remote -a itau-test
+        - git subtree push --prefix api heroku master
+
+## FAQ
+
+ > Porque está usando o Client Credentials Flow com o client
+  
+    - o correto seria utilizar o Authorization Code Flow porém seria necessário ter um resource provider (criar um, facebook, twitter ...). Para o escopo do teste, que é mostrar como funciona o oAuth2, ter que conectar a um resouce provider iria demorar mais tempo, logo acabei usando o Client Credentials Flow para demonstrar a implementação do oAuth 2. Vale salientar o Flow utilizado não é recomendado para um front-end, mas sim para ser utilizado entre 2 back-ends (apis, schedules) de confiança; 
+
+ > O docker foi utilizado somente para o ambiente de desenvolvimento para facilitar a montagem do ambiente. Utilizei imagens prontas pois não tive a necessidade de adaptar.
