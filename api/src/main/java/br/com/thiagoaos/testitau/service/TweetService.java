@@ -1,7 +1,7 @@
 package br.com.thiagoaos.testitau.service;
 
-import br.com.thiagoaos.testitau.dtos.TotalTweetByHourDTO;
-import br.com.thiagoaos.testitau.dtos.TotalTweetBySearchTagLangDTO;
+import br.com.thiagoaos.testitau.dto.TotalTweetByHourDTO;
+import br.com.thiagoaos.testitau.dto.TotalTweetBySearchTagLangDTO;
 import br.com.thiagoaos.testitau.exception.TweetNotFoundException;
 import br.com.thiagoaos.testitau.model.Tweet;
 
