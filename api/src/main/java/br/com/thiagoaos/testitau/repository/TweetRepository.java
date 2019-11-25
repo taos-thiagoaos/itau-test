@@ -15,7 +15,7 @@ public interface TweetRepository extends CrudRepository<Tweet, Long> {
     List<Tweet> findBySearchTag(String searchTag);
 
     @Query(
-            value="select date(date) as date, HOUR(date) as hour, count(*) as total " +
+            value="SELECT date(date) as date, HOUR(date) as hour, count(*) as total " +
                     "FROM tweets " +
                     "GROUP BY date(date), hour " +
                     "ORDER BY date(date) ASC, hour ASC",
@@ -24,9 +24,10 @@ public interface TweetRepository extends CrudRepository<Tweet, Long> {
     List<TotalTweetByHourDTO> findAllGroupByDayHour();
 
     @Query(
-            value="select searchTag as tag, lang as lang, count(*) as total " +
-                    "from tweets " +
-                    "group by searchTag, lang"
+            value="SELECT searchTag as tag, lang as lang, count(*) as total " +
+                    "FROM tweets " +
+                    "GROUP BY searchTag, lang " +
+                    "ORDER BY searchTag ASC, total ASC, lang ASC"
     )
     List<TotalTweetBySearchTagLangDTO> findAllGroupByTagLang();
 
