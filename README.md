@@ -1,13 +1,13 @@
 # Relatório Técnico
 
-## 
-
 ## Aderência ao Planejamento
 
-    - As tarefas do planejamento foram realizadas com a adição de algumas etapas não mencionadas. Como subir a API e Front para a nuvem buscando uma melhor forma para acessar a solução. 
-    - Teve 2 dificultadores:
-        - o primeiro foi disponibilidade de tempo, sendo que o mesmo já era curta e ainda tive algumas questões pessoais. Com mais tempo seria possível desenvolver uma arquitetura mais escalável, utilizando mensageria e bases diferentes para cada serviços.
-        - o segundo foi o próprio escopo do teste, mais amplo, onde foi necessário atuar em soluções de diversos tipos (api, front, carga, gateway) 
+- As tarefas do planejamento foram realizadas com a adição de algumas etapas não mencionadas. Como subir a API e Front para a nuvem buscando uma melhor forma para acessar a solução. 
+
+- Dificultadores:
+    - o primeiro foi disponibilidade de tempo, sendo que o mesmo já era curta e ainda tive algumas questões pessoais. Com mais tempo seria possível desenvolver uma arquitetura mais escalável, utilizando mensageria e bases diferentes para cada serviços.
+
+    - o segundo foi o próprio escopo do teste, mais amplo, onde foi necessário atuar em soluções de diversos tipos (api, front, carga, gateway) 
 
 
 ## Acessos
