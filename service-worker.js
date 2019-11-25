@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/itau-test/precache-manifest.b08cfe86a91cd9e0207dc9825ffc7ac1.js"
+  "/itau-test/precache-manifest.538b61442cd5730d1f04289f2659fbc7.js"
 );
 
 self.addEventListener('message', (event) => {
