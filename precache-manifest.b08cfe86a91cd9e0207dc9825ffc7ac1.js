@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04b4cebfad7f52715e332fea51336926",
+    "revision": "11156facd665306ab110dc3af33bde95",
     "url": "/itau-test/index.html"
   },
   {
-    "revision": "40ef5b4dbf484f5f25be",
+    "revision": "09d8dd6a0e4a568557cb",
     "url": "/itau-test/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/itau-test/static/js/2.ed1d6ff1.chunk.js"
   },
   {
-    "revision": "40ef5b4dbf484f5f25be",
-    "url": "/itau-test/static/js/main.ed0f8263.chunk.js"
+    "revision": "09d8dd6a0e4a568557cb",
+    "url": "/itau-test/static/js/main.5eee4f47.chunk.js"
   },
   {
     "revision": "83a16ce404b6e25b6cd0",
