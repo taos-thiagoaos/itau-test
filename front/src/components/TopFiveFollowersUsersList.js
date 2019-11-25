@@ -6,19 +6,20 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import React, { useEffect, useState } from 'react';
 import useStyles from 'styles';
+import api from 'core/api';
 
-export function TopFiveFollowersUsersList({}) {
+
+export function TopFiveFollowersUsersList() {
   const classes = useStyles();
 
-  const [hasError, setErrors] = useState(false);
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("https://itau-test.herokuapp.com/api/v1/users/top5-followers");
+      const res = await api.getTop5Followers();
       res.json()
         .then(data => setUsers(data))
-        .catch(err => setErrors(err));
+        .catch(err => console.log(err));
     }
 
     fetchData();

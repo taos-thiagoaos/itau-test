@@ -1,4 +1,4 @@
-twitter_collect/.env
-twitter_collect/node_modules/
+etl/.env
+etl/node_modules/
 
 .vscode/

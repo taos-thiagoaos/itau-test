@@ -16,7 +16,7 @@
     - terminal hyper
     - git
 
-- Twitter Collect
+- etl (from twitter api to database)
     - nodejs 12.13
     - mysql
     - sequelize lib
@@ -67,17 +67,25 @@
         
         - http://localhost:3000
 
-## Instalação
+    > TODO
+
+        - Paginação
+        - Indicação de loading
+        - Tratamento de erro
+
+## Instalação Local
 
 - Database
 
         - docker-compose up db;
 
-- Data collect (Rode somente 1 vez e antes da api e front)
+- ETL 
+        
+        * Responsável por criar a estrutura e popular a database. Carga destrutiva, a cada vez que roda drop e recria.
 
-        - cp twitter_collect/env.template twitter_collect/.env
+        - cp etl/env.template etl/.env
         - set twitter token in .env TWITTER_BEARER_TOKEN directive
-        - docker-compose up data_collect;
+        - docker-compose up etl;
 
 - api
 
@@ -95,10 +103,10 @@
         - heroku git:remote -a itau-test
         - git subtree push --prefix api heroku master
 
-## FAQ
+## Esclarecimentos
 
- > Porque está usando o Client Credentials Flow com o client
-  
-    - o correto seria utilizar o Authorization Code Flow porém seria necessário ter um resource provider (criar um, facebook, twitter ...). Para o escopo do teste, que é mostrar como funciona o oAuth2, ter que conectar a um resouce provider iria demorar mais tempo, logo acabei usando o Client Credentials Flow para demonstrar a implementação do oAuth 2. Vale salientar o Flow utilizado não é recomendado para um front-end, mas sim para ser utilizado entre 2 back-ends (apis, schedules) de confiança; 
+- Para conectar o front-end ao gateway o correto seria utilizar o Authorization Code Flow do oAuth 2.0 porém seria necessário ter um resource provider (criar um, facebook, twitter ...). Para o escopo do teste, que é mostrar como funciona o oAuth2, acabei usando o Client Credentials Flow para demonstrar a implementação do oAuth 2, pois ter que configurar um resource provider ou criar um iria consumir ainda mais tempo. Vale salientar o Flow utilizado não é recomendado para um front-end, mas sim para ser utilizado entre 2 back-ends (apis, schedules) de confiança.
 
- > O docker foi utilizado somente para o ambiente de desenvolvimento para facilitar a montagem do ambiente. Utilizei imagens prontas pois não tive a necessidade de adaptar.
+- O docker foi utilizado somente para o ambiente de desenvolvimento para facilitar a montagem do ambiente. Utilizei imagens prontas pois não tive a necessidade de adaptar.
+
+- A arquitetura e estratégia do etl é foi focada no contexto, onde eram somente algumas tags e poucos tweets. Para uma demanda maior o ideal é adotar uma estratégia continua e escalavel. Uma solução mais robusta seria ter etl como serveless function ativando por schedule na AWS e o conteudo consumido ser adicionado em uma mensageria como RabbitMq, o(s) consumidore(s) seriam responsável transformar e armazenar em uma base apropriada.
