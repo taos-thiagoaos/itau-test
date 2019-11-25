@@ -17,6 +17,13 @@
 - A API foi disponibilizada na cloud do heroku https://
 itau-test.herokuapp.com/ (verificar os Endpoints mais abaixo);
     
+## Diagrama da Arquitetura
+
+![Arquitetura](arquitetura.png)
+
+## Diagrama da modelagem de dados
+
+![Modelagem de Dados](dados.png)
 
 ## Tecnologias Utilizadas
 
