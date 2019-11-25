@@ -16,14 +16,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.List;
 
 @Configuration
-@PropertySource({"classpath:application.properties"})
 @EnableSwagger2
 public class SwaggerConfig {
 
     public static final Contact DEFAULT_CONTACT = new Contact("Thiago Antonius", "https://github.com/thiagoaos", "thiagoaos@gmail.com");
-
-    @Value("${swagger.ui.oauth2.token.url}")
-    private String swaggerTokenURL;
 
     @Bean
     public Docket api() {
