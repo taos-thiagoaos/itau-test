@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/itau-test/static/css/main.2cce8147.chunk.css",
-    "main.js": "/itau-test/static/js/main.569617fc.chunk.js",
-    "main.js.map": "/itau-test/static/js/main.569617fc.chunk.js.map",
+    "main.js": "/itau-test/static/js/main.31d1f07c.chunk.js",
+    "main.js.map": "/itau-test/static/js/main.31d1f07c.chunk.js.map",
     "runtime~main.js": "/itau-test/static/js/runtime~main.3e9959a8.js",
     "runtime~main.js.map": "/itau-test/static/js/runtime~main.3e9959a8.js.map",
     "static/js/2.f005953a.chunk.js": "/itau-test/static/js/2.f005953a.chunk.js",
     "static/js/2.f005953a.chunk.js.map": "/itau-test/static/js/2.f005953a.chunk.js.map",
     "index.html": "/itau-test/index.html",
-    "precache-manifest.580262e44fb87ef9a53504096e95ee27.js": "/itau-test/precache-manifest.580262e44fb87ef9a53504096e95ee27.js",
+    "precache-manifest.cb79009550787cb0cd8502c32a1dfba4.js": "/itau-test/precache-manifest.cb79009550787cb0cd8502c32a1dfba4.js",
     "service-worker.js": "/itau-test/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/itau-test/static/css/main.2cce8147.chunk.css.map"
   }
