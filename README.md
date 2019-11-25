@@ -4,6 +4,19 @@
 
 ## Aderência ao Planejamento
 
+    - As tarefas do planejamento foram realizadas com a adição de algumas etapas não mencionadas. Como subir a API e Front para a nuvem buscando uma melhor forma para acessar a solução. 
+    - Teve 2 dificultadores:
+        - o primeiro foi disponibilidade de tempo, sendo que o mesmo já era curta e ainda tive algumas questões pessoais. Com mais tempo seria possível desenvolver uma arquitetura mais escalável, utilizando mensageria e bases diferentes para cada serviços.
+        - o segundo foi o próprio escopo do teste, mais amplo, onde foi necessário atuar em soluções de diversos tipos (api, front, carga, gateway) 
+
+
+## Acessos
+
+- O código fonte está disponível em um monorepo no github https://github.com/thiagoaos/itau-test
+- O Front foi disponibilizado no github pages https://thiagoaos.github.io/itau-test
+- A API foi disponibilizada na cloud do heroku https://
+itau-test.herokuapp.com/ (verificar os Endpoints mais abaixo);
+    
 
 ## Tecnologias Utilizadas
 
@@ -56,7 +69,7 @@
         - GET https://thiagoaos-eval-prod.apigee.net/tweets/total-by-tag-lang
         - GET https://thiagoaos-eval-prod.apigee.net/tweets/total-by-hour
         - POST https://thiagoaos-eval-prod.apigee.net/oauth/client_credential/accesstoken
-
+    
 
 - Front-end
     - react with react hooks strategy
@@ -65,7 +78,8 @@
 
     > Endpoint
         
-        - http://localhost:3000
+        - Production https://thiagoaos.github.io/itau-test/
+        - Local http://localhost:3000
 
     > TODO
 
@@ -102,6 +116,10 @@
         - heroku login
         - heroku git:remote -a itau-test
         - git subtree push --prefix api heroku master
+
+> front para o github pages
+
+    - npm run deploy
 
 ## Esclarecimentos
 

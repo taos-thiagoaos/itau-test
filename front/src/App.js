@@ -6,14 +6,19 @@ import { NavigationBar } from 'components/NavigationBar';
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import useStyles from 'styles';
+import createHistory from 'history/createBrowserHistory';
 import './App.css';
 
 function App() {
   const classes = useStyles();
 
+  const history = createHistory({
+    basename: process.env.PUBLIC_URL,
+  });
+
   return (
     <React.Fragment>
-      <Router>
+      <Router history={history} basename={process.env.PUBLIC_URL}>
         <CssBaseline />
         <NavigationBar></NavigationBar>
         <main>
