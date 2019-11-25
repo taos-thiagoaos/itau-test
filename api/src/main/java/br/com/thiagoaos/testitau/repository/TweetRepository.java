@@ -24,7 +24,7 @@ public interface TweetRepository extends CrudRepository<Tweet, Long> {
     List<TotalTweetByHourDTO> findAllGroupByDayHour();
 
     @Query(
-            value="select searchTag as tag, lang, count(*) as total " +
+            value="select searchTag as tag, lang as lang, count(*) as total " +
                     "from tweets " +
                     "group by searchTag, lang"
     )
