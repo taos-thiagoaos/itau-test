@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/itau-test/static/css/main.2cce8147.chunk.css",
+    "main.js": "/itau-test/static/js/main.ed0f8263.chunk.js",
+    "main.js.map": "/itau-test/static/js/main.ed0f8263.chunk.js.map",
+    "runtime~main.js": "/itau-test/static/js/runtime~main.3e9959a8.js",
+    "runtime~main.js.map": "/itau-test/static/js/runtime~main.3e9959a8.js.map",
+    "static/js/2.ed1d6ff1.chunk.js": "/itau-test/static/js/2.ed1d6ff1.chunk.js",
+    "static/js/2.ed1d6ff1.chunk.js.map": "/itau-test/static/js/2.ed1d6ff1.chunk.js.map",
+    "index.html": "/itau-test/index.html",
+    "precache-manifest.ebf450e0a559735ed6167e057db7b462.js": "/itau-test/precache-manifest.ebf450e0a559735ed6167e057db7b462.js",
+    "service-worker.js": "/itau-test/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/itau-test/static/css/main.2cce8147.chunk.css.map"
+  }
+}
